@@ -1,0 +1,201 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Онгудайский район Республика Алтай</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <div class="header-space"></div>
+            <div class="top-navigation">
+                <div class="nav-links">
+                    <a href="о республике алтай.html">О РЕСПУБЛИКЕ АЛТАЙ</a>
+                    <a href="история.html">ИСТОРИЯ</a>
+                    <a href="ДОСТОПРИМЕЧАТЕЛЬНОСТИ.html">ДОСТОПРИМЕЧАТЕЛЬНОСТИ</a>
+                </div>
+            </div>
+            <div class="header-space"></div>
+            <div class="header-stripe">
+                <h1 class="header-title">ОНГУДАЙСКИЙ РАЙОН - СЕРДЦЕ ГОРНОГО АЛТАЯ</h1>
+            </div>
+            <div class="content">
+                <div class="symbols-row">
+                    <div class="symbol-card">
+                        <img src="https://images.vector-images.com/2/ongudaiskii_rayon_coa.gif" alt="Герб Онгудайского района">
+                        <p>Герб</p>
+                    </div>
+                    <div class="symbol-card">
+                        <img src="https://storage.yandexcloud.net/roz-wiki/Flag_of_Ongudaysky_District_%282011%29.png" alt="Флаг Онгудайского района">
+                        <p>Флаг</p>
+                    </div>
+                </div>
+
+                <div class="description">
+                    <h2>О районе</h2>
+                    <p>
+                        Онгудайский район - самый центральный район Горного Алтая, как в географическом, так и в этнокультурном смысле. Здесь пересеклись в конце XIX века русская христианская и алтайская коренная цивилизации.
+                        Территория района обладает большим количеством природных, культурно-исторических территорий и объектов, которые вызывают огромный интерес туристов. Здесь более 100 озер, множество рек с живописными водопадами и порогами, родниковые и минеральные источники, обладающие целебными свойствами. Территория, занимаемая Каракольским природным парком «Уч Энмек» богата духовными, культурно-историческими памятниками разных эпох и священными для алтайцев местами.
+                    </p>
+                    <h2>Географическое положение</h2>
+                    <p>
+                        Муниципальное образование Онгудайский район расположен в центральной части Республики Алтай, в ее горно-степной зоне, территория - 11744 кв.км. В районе проживают 14,1 тыс. человек в 29 селах, входящих в 10 сельских администраций. Районный центр - село Онгудай - основано в 1626 году, расположено на берегах реки Урсула в 210 км южнее города Горно-Алтайска .
+                        Район, в силу административно-географических обстоятельств, оказался сердцевиной Горного Алтая, граничит со всеми районами республики, кроме Майминского и Турочакского
+                    </p>
+                </div>
+            </div>
+            <h3 class="table-caption">Сельские поселения и населённые пункты</h3>
+            <div class="table-container">
+                <table class="settlements-table">
+                    <thead>
+                        <tr>
+                            <th>Сельское поселение</th>
+                            <th>Населённые пункты</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Елинское сельское поселение</td>
+                            <td>с. Ело, с. Кара-Кобы, с. Каярлык </td>
+                        </tr>
+
+                        <tr>
+                            <td>Ининское сельское поселение</td>
+                            <td>с. Иня, с. Ак-Бом, с. Инегень, с. Йодро, с. Малая Иня, с. Малый Яломан</td>
+                        </tr>
+                        <tr>
+                            <td>Каракольское сельское поселение</td>
+                            <td>с. Каракол, с. Бичикту-Боом, с. Курота</td>
+                        </tr>
+                        <tr>
+                            <td>Куладинское сельское поселение</td>
+                            <td>с. Кулада, с. Боочи</td>
+                        </tr>
+                        <tr>
+                            <td>Купчегенское сельское поселение</td>
+                            <td>с. Купчегень, с. Большой Яломан</td>
+                        </tr>
+                        <tr>
+                            <td>Нижне-Талдинское сельское поселение</td>
+                            <td>с. Нижняя Талда</td>
+                        </tr>
+                        <tr>
+                            <td>Онгудайское сельское поселение</td>
+                            <td>с. Онгудай</td>
+                        </tr>
+                        <tr>
+                            <td>Теньгинское сельское поселение</td>
+                            <td>с. Теньга, с. Нефтебаза, с. Озерное, с. Талда, с. Туекта, с. Шиба</td>
+                        </tr>
+                        <tr>
+                            <td>Хабаровское сельское поселение</td>
+                            <td>с. Хабаровка, с. Улита</td>
+                        </tr>
+                        <tr>
+                            <td>Шашикманское сельское поселение</td>
+                            <td>с. Шашикман, с. Каянча</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="map-container">
+                <h3 class="map-title">Карта Республики Алтай Онгудайский район</h3>
+                <div id="yandex-map"></div>
+            </div>
+
+            <!-- Подключаем API Яндекс.Карт -->
+            <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш_api_ключ&lang=ru_RU" type="text/javascript"></script>
+            <script type="text/javascript">
+                ymaps.ready(init);
+
+                function init() {
+                    // Создаем карту
+                    var myMap = new ymaps.Map("yandex-map", {
+                        center: [50.7486, 86.1439], // Координаты Онгудая
+                        zoom: 9 // Масштаб
+                    });
+
+                    // Добавляем метку Онгудая
+                    var myPlacemark = new ymaps.Placemark([50.7486, 86.1439], {
+                        hintContent: 'Онгудай',
+                        balloonContent: 'Административный центр Онгудайского района'
+                    });
+
+                    myMap.geoObjects.add(myPlacemark);
+
+                    // Добавляем элементы управления
+                    myMap.controls
+                        .remove('geolocationControl')
+                        .remove('searchControl')
+                        .remove('trafficControl')
+                        .remove('typeSelector')
+                        .remove('fullscreenControl')
+                        .remove('rulerControl');
+                }
+            </script>
+            <div class="footer-navigation">
+                <div class="footer-contacts">
+                    <div class="contact-block">
+                        <div class="contact-title">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Адрес</span>
+                        </div>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="fas fa-building"></i>
+                                <span>с. Онгудай, ул. Советская, 32</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-block">
+                        <div class="contact-title">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>Телефоны</span>
+                        </div>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <a href="tel:+73884522146">+7 (388-45) 2-21-46</a>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-fax"></i>
+                                <a href="tel:+73884522146">+7 (388-45) 2-21-46</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-block">
+                        <div class="contact-title">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email</span>
+                        </div>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="fas fa-at"></i>
+                                <a href="mailto:onguday@mail.ru">onguday@mail.ru</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-block">
+                        <div class="contact-title">
+                            <i class="fas fa-clock"></i>
+                            <span>Режим работы</span>
+                        </div>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <span>Пн-Чт: 8:30-17:30</span>
+                            </div>
+                            <div class="contact-item">
+                                <span>Пт: 8:30-16:15</span>
+                            </div>
+                            <div class="contact-item">
+                                <span>Обед: 13:00-14:00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</body>
+</html>

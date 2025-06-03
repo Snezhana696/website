@@ -1,0 +1,349 @@
+﻿body {
+    margin: 0;
+    font-family: Times New Roman;
+    background-color: #f9f9f9;
+    color: #333;
+
+}
+/* Новое навигационное меню */
+.top-navigation {
+    background-color: #3498db;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    display: inline-flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+    .nav-links a {
+        color: black;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: bold;
+        padding: 5px 10px;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+    }
+
+        .nav-links a:hover {
+            background-color: #38b8ff;
+        }
+/* Пространство под фиксированной навигацией */
+.nav-spacer {
+    height: 50px; /* Высота навигации + отступ */
+}
+
+/* Пространство над шапкой */
+.header-space {
+    height: 20px;
+    background-color: #3498db;
+}
+.header-stripe {
+    background-color: white; /* Голубой цвет полосы */
+    height: 100px; /* Высота полосы */
+    margin: 0px;
+    width: 100%;
+    position: relative; /* Чтобы заголовок позиционировался относительно полосы */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-title {
+    color: #3498db; /* Белый текст */
+    font-size: 28px;
+    font-family: Franklin Gothic Medium, Arial Narrow, Arial, sans-serif: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Легкая тень для лучшей читаемости */
+    z-index: 10; /* Чтобы текст был над полосой */
+}
+
+/* Основное содержимое */
+.content {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Контейнер для герба и флага */
+.symbols-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+/* Стиль для герба и флага */
+.symbol-card {
+    text-align: center;
+    flex: 0 0 auto;
+}
+
+    .symbol-card img {
+        width: 200px;
+        height: 230px;
+        object-fit: contain;
+        border: 2px solid #e0e0e0;
+        border-radius: 8px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+        background: white;
+        padding: 10px;
+    }
+
+    .symbol-card p {
+        margin-top: 12px;
+        font-weight: bold;
+        color: #3498db;
+        font-size: 18px;
+    }
+
+/* Текстовый блок */
+.description {
+    line-height: 1.6;
+    padding: 15px;
+    border-top: 2px solid #f0f0f0;
+    margin-top: 20px;
+  }
+.description h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+/* Стили для таблицы в цветах флага (синий-белый-желтый) */
+.settlements-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+    .settlements-table thead {
+        background: linear-gradient(to right, white 0%, white 33%, #3498db 33%, #3498db 66%, white 66%, white 100%);
+    }
+
+    .settlements-table th {
+        color: #2c3e50;
+        padding: 12px;
+        text-align: left;
+        position: relative;
+    }
+
+        .settlements-table th:first-child {
+            background-color: white;
+            width: 40%;
+        }
+
+        .settlements-table th:last-child {
+            background-color: white;
+        }
+
+    .settlements-table td {
+        padding: 10px 12px;
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+    /* Полосатая раскраска строк как у флага */
+    .settlements-table tr:nth-child(3n+1) td {
+        background-color: cornflowerblue;
+    }
+
+    .settlements-table tr:nth-child(3n+2) td {
+        background-color: white;
+    }
+
+    .settlements-table tr:nth-child(3n+3) td {
+        background-color: rgb(245 224 25);
+    }
+
+.table-caption {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 25px 0 10px;
+    color: #2c3e50;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .symbols-row {
+        gap: 30px;
+    }
+
+    .symbol-card img {
+        width: 160px;
+        height: 190px;
+    }
+
+    .settlements-table {
+        font-size: 14px;
+    }
+
+        .settlements-table thead {
+            background: #3498db;
+        }
+
+        .settlements-table th {
+            color: white;
+        }
+}
+/*Стили для центрирования*/
+.table-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.settlements-table {
+    width: auto;
+    max-width: 100%;
+}
+    .settlements-table th,
+    .settlements-table td {
+        text-align: center;
+        padding: 12px 20px;
+    }
+/* Стили для карты */
+.map-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.map-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#yandex-map {
+    width: 100%;
+    height: 500px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    #yandex-map {
+        height: 300px;
+    }
+}
+/* Стили для нижней навигации с контактами */
+.footer-navigation {
+    background-color: rgb(245 224 25);
+    padding: 25px 0;
+    text-align: center;
+}
+
+.footer-contacts {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.contact-block {
+    color: black;
+    text-align: left;
+    flex: 1;
+    padding: 0 15px;
+    min-width: 0;
+}
+
+.contact-title {
+    font-weight: bold;
+    margin-bottom: 12px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+}
+
+    .contact-title i {
+        font-size: 18px;
+        color: #3498db;
+        min-width: 20px;
+    }
+
+.contact-info {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+    .contact-info a {
+        color: #3498db;
+        text-decoration: none;
+        transition: color 0.2s;
+    }
+
+        .contact-info a:hover {
+            color: #5dade2;
+            text-decoration: underline;
+        }
+
+.contact-item {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+    .contact-item i {
+        width: 18px;
+        color: #3498db;
+        text-align: center;
+    }
+
+@media (max-width: 992px) {
+    .footer-contacts {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .contact-block {
+        flex: 0 0 50%;
+        margin-bottom: 20px;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-contacts {
+        flex-direction: column;
+    }
+
+    .contact-block {
+        flex: 1;
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact-title {
+        justify-content: center;
+    }
+
+    .contact-item {
+        justify-content: center;
+    }
+}
